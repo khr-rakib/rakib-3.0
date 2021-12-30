@@ -1,0 +1,9 @@
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslink": true,
+        "source.fixAll.tslink": true,
+    },
+    "javascript.validate.enable": false,
+    "typescript.validate.enable": false,
+}
