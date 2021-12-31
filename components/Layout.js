@@ -20,14 +20,14 @@ export default function Layout({ children }) {
                 </div>
             )}
             <div className="flex h-screen relative overflow-hidden">
-                <aside className="w-64 h-screen sm:relative bg-gray-50 shadow md:h-full hidden sm:flex">
+                <aside className="w-64 h-screen sm:relative bg-gray-50 shadow md:h-full hidden flex-col sm:flex">
                     <Sidebar />
                 </aside>
 
                 <main className="flex-1 space-y-4">
                     <Header />
 
-                    <div className="py-5 px-9 overflow-auto h-full pb-36">
+                    <div className="py-5 px-9 overflow-auto h-full pb-36 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                         {children}
                     </div>
                 </main>
