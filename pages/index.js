@@ -13,8 +13,8 @@ export default function Home() {
               className="rounded-full ring-2 h-32 object-contain text-center"
             />
 
-            <div className="space-y-2">
-              <h2 className="text-xl leading-3 text-black">KH Rakib</h2>
+            <div className="space-y-2 dark:text-white">
+              <h2 className="text-xl leading-3">KH Rakib</h2>
               <h4>Software Developer</h4>
               <div className="flex gap-2 justify-center">
                 <SocialLinks />
@@ -22,7 +22,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="prose-base w-8/12 m-auto">
+          <div className="prose-base w-8/12 m-auto dark:text-white">
             <p>
               A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.
             </p>

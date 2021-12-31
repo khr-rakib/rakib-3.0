@@ -20,7 +20,7 @@ export default function Layout({ children }) {
                 </div>
             )}
             <div className="flex h-screen relative overflow-hidden">
-                <aside className="w-64 h-screen sm:relative bg-gray-50 shadow md:h-full hidden flex-col sm:flex">
+                <aside className="w-52 h-screen sm:relative bg-gray-50 dark:bg-gray-700 shadow md:h-full hidden flex-col sm:flex">
                     <Sidebar />
                 </aside>
 

@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import '../styles/globals.css';
 import "nprogress/nprogress.css";
 import dynamic from 'next/dynamic';
+import Script from "next/script";
 
 const NprogressBar = dynamic(
   () => {
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }) {
         <NprogressBar />
         <Component {...pageProps} />
       </Provider>
+      <Script strategy="beforeInteractive" src="/js/darkMode.js" />
     </>
   )
 }
