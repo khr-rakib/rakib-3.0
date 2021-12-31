@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 
 export default function Dashboard() {
     return (
-        <Layout>
+        <Layout title="Dashboard">
             <div className="grid grid-cols-3 gap-4">
                 <article className="border rounded shadow hover:shadow-lg">
                     <Link href={'/blog/1'}>

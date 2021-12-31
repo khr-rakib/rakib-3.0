@@ -2,13 +2,17 @@ import Header from "./Header"
 import { useSelector, useDispatch } from "react-redux"
 import { sideNavAction } from "../redux/features/settingSlice";
 import Sidebar from "./Sidebar";
+import Head from "next/head";
 
-export default function Layout({ children }) {
+export default function Layout({ children, title = "KH Rakib - Software Engineer" }) {
     const dispatch = useDispatch();
     const { sideNav } = useSelector(state => state.settings)
 
     return (
         <>
+            <Head>
+                <title>{title ? `${title} - KH Rakib` : title}</title>
+            </Head>
             {sideNav && (
                 <div className="fixed top-0 left-0 z-30 transition duration-1000 bg-[#0000008c] w-full h-full">
                     <div className={sideNav ? "w-full h-full absolute z-40  transform  translate-x-0 " : "w-full h-full absolute z-40  transform -translate-x-full"}>
