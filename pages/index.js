@@ -11,11 +11,13 @@ export default function Home() {
               src="/img/kh-rakib.jpg"
               alt="kh rakib"
               className="rounded-full ring-2 h-32 w-32 object-contain text-center"
+              width={128}
+              height={128}
             />
 
             <div className="space-y-2 dark:text-white">
               <h2 className="text-xl leading-3">KH Rakib</h2>
-              <h4>Software Developer</h4>
+              <h3>Software Developer</h3>
               <div className="flex gap-2 justify-center">
                 <SocialLinks />
               </div>

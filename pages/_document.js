@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang='en'>
         <Head>
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.ico' />

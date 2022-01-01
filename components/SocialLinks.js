@@ -1,7 +1,8 @@
 export default function SocialLinks() {
     return (
         <>
-            <a href="mailto:khr.rakib@gmail.com?subject=Mail from website&" target="_blank">
+            <a href="mailto:khr.rakib@gmail.com" target="_blank" rel="noreferrer">
+                <span className="sr-only">Gmail</span>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="20" height="20"
                     viewBox="0 0 48 48"
@@ -9,7 +10,8 @@ export default function SocialLinks() {
                 </svg>
             </a>
 
-            <a href="https://api.whatsapp.com/send?phone=01779968783&text=Contact From Website" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=01779968783" target="_blank" rel="noreferrer">
+                <span className="sr-only">whatsapp</span>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="20" height="20"
                     viewBox="0 0 48 48"
@@ -17,7 +19,8 @@ export default function SocialLinks() {
                 </svg>
             </a>
 
-            <a href="https://www.linkedin.com/in/khrakib" target="_blank">
+            <a href="https://www.linkedin.com/in/khrakib" target="_blank" rel="noreferrer">
+                <span className="sr-only">Linkedin</span>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="20" height="20"
                     viewBox="0 0 48 48"
@@ -25,7 +28,8 @@ export default function SocialLinks() {
                 </svg>
             </a>
 
-            <a href="https://www.facebook.com/rakib.khr" target="_blank">
+            <a href="https://www.facebook.com/rakib.khr" target="_blank" rel="noreferrer">
+                <span className="sr-only">Facebook</span>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="20" height="20"
                     viewBox="0 0 48 48"

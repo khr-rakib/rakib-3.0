@@ -5,7 +5,7 @@ export default function Sidebar() {
         <>
             <Link href={'/'}>
                 <a className="px-6 h-[72px] w-full border-b-2 flex items-center gap-4">
-                    <img src="/logo-new.png" alt="Kh-rakib" className="w-12 h-12 object-contain" />
+                    <img src="/logo-new.png" alt="Kh-rakib" className="w-12 h-12 object-contain" width={48} height={48} />
                     <h1 className="text-xl font-bold text-black dark:text-white underline decoration-2 decoration-wavy decoration-gray-500 dark:decoration-gray-50">KH Rakib</h1>
                 </a>
             </Link>
