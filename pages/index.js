@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Layout from "../components/Layout";
 import SocialLinks from "../components/SocialLinks";
 
@@ -6,7 +7,7 @@ export default function Home() {
     <>
       <Layout>
         <div className="flex flex-col gap-5">
-          <div className="w-8/12 m-auto flex flex-col space-y-4 justify-center items-center py-6 text-center shadow rounded">
+          <div className="w-full md:w-8/12 m-auto flex flex-col space-y-4 justify-center items-center py-6 text-center shadow rounded">
             <img
               src="/img/kh-rakib.jpg"
               alt="kh rakib"
@@ -24,7 +25,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="prose-base w-8/12 m-auto dark:text-white">
+          <div className="prose-base w-full md:w-8/12 m-auto dark:text-white">
             <p>
               A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.
             </p>
