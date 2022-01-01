@@ -16,7 +16,7 @@ class MyDocument extends Document {
           <meta name="keywords" content="software engineer, kh rakib, rakib, developer, dev rakib, kausar, engineer rakib" />
           <meta name="description" content="My work timings are pretty flexible which makes me overlap my work hours with all time zones for communication and status sharing!" />
         </Head>
-        <body className='antialiased bg-white dark:bg-gray-700'>
+        <body className='antialiased bg-white dark:bg-[#18191A]'>
           <Main />
           <NextScript />
         </body>

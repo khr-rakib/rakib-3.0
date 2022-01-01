@@ -23,9 +23,9 @@ export default function Dashboard() {
         <Layout title="Dashboard">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                 {articleCard.map(item => (
-                    <article key={item.id} className="border rounded shadow transition hover:shadow-lg">
+                    <article key={item.id} className="border dark:border-none rounded shadow dark:shadow-none transition hover:shadow-lg">
                         <Link href={`/blog/${item.slug}`}>
-                            <a className="pb-3 block">
+                            <a className="pb-3 block dark:bg-[#242526]">
                                 <img className="w-full aspect-video" src={item.banner} alt={item.slug} />
                                 <h2 className="px-2 pt-2 font-semibold text-gray-500 dark:text-white text-lg line-clamp-1">{item.title}</h2>
                             </a>
