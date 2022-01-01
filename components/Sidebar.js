@@ -10,7 +10,7 @@ export default function Sidebar() {
     const { sideNav } = useSelector(state => state.settings)
 
     const handleMenuClick = () => {
-        dispatch(sideNavAction(!sideNav));
+        dispatch(sideNavAction(false));
     }
 
     return (

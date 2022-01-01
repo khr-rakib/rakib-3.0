@@ -31,7 +31,7 @@ export default function Layout({ children, title = "KH Rakib - Software Engineer
                 <main className="flex-1 space-y-4">
                     <Header />
 
-                    <div className="py-5 px-9 overflow-auto h-full pb-36 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                    <div className="px-3  md:py-5 md:px-9 overflow-auto h-full pb-36 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                         {children}
                     </div>
                 </main>
