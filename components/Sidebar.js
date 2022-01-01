@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Sidebar() {
+    const { pathname } = useRouter();
+
     return (
         <>
             <Link href={'/'}>
@@ -13,7 +16,12 @@ export default function Sidebar() {
                 <ul className="space-y-0 pt-2">
                     <li>
                         <Link href={"/dashboard"}>
-                            <a className="py-1 px-3 hover:bg-gray-100 block dark:text-gray-100 dark:hover:text-gray-700 dark:hover:bg-gray-300">Dashboard</a>
+                            <a className={`py-1 px-3 hover:bg-gray-100 block dark:text-gray-100 dark:hover:text-gray-700 dark:hover:bg-gray-300 ${pathname === '/dashboard' && 'bg-gray-100'}`}>Dashboard</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href={"/components/otp-box"}>
+                            <a className={`py-1 px-3 hover:bg-gray-100 block dark:text-gray-100 dark:hover:text-gray-700 dark:hover:bg-gray-300 ${pathname === '/components/otp-box' && 'bg-gray-100'}`}>Otp Box</a>
                         </Link>
                     </li>
                 </ul>
