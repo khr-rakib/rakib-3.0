@@ -8,9 +8,9 @@ export default function Home() {
         <div className="flex flex-col gap-5">
           <div className="w-8/12 m-auto flex flex-col space-y-4 justify-center items-center py-6 text-center shadow rounded">
             <img
-              src="https://avatars.githubusercontent.com/u/69071127?v=4"
+              src="/img/kh-rakib.jpg"
               alt="kh rakib"
-              className="rounded-full ring-2 h-32 object-contain text-center"
+              className="rounded-full ring-2 h-32 w-32 object-contain text-center"
             />
 
             <div className="space-y-2 dark:text-white">
