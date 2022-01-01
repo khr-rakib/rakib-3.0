@@ -18,7 +18,7 @@ export default function OtopBox() {
 
     return (
         <Layout title="Otp Box">
-            <div className="w-full md:w-6/12 mx-auto shadow text-center space-y-2 p-4">
+            <div className="w-full md:w-full lg:w-8/12 mx-auto shadow text-center space-y-2 p-4">
                 <p>Enter the OTP sent to you to verify your identity</p>
                 <div className="flex items-center justify-center space-x-2">
                     {otp.map((data, index) => {
@@ -41,13 +41,13 @@ export default function OtopBox() {
 
                 <p className="space-x-2">
                     <button
-                        className="bg-gray-200 shadow px-3 text-black rounded hover:bg-gray-300"
+                        className="bg-gray-200 hover:shadow px-3 text-black rounded hover:bg-gray-300"
                         onClick={e => setOtp([...otp.map(v => "")])}
                     >
                         Clear
                     </button>
                     <button
-                        className="bg-green-200 shadow px-3 text-black rounded hover:bg-green-300"
+                        className="bg-green-200 hover:shadow px-3 text-black rounded hover:bg-green-300"
                         onClick={e =>
                             alert("Entered OTP is " + otp.join(""))
                         }
@@ -57,9 +57,9 @@ export default function OtopBox() {
                 </p>
             </div>
 
-            <h2 className="text-center underline decoration-wavy decoration-blue-400 text-xl">Source Code Below</h2>
-            <div className="mt-8 space-y-4">
-                {/* <h3>You have to create a component just like this.</h3> */}
+            <div className="mt-8 md:w-full lg:w-8/12 mx-auto space-y-4">
+                <h2 className="text-center underline decoration-wavy decoration-green-300 text-xl">Source Code Below</h2>
+                <h3>You have to create a component just like this.</h3>
                 <Gist id="9b68779bd423879f1cce485283e49a4b" />
             </div>
         </Layout>
